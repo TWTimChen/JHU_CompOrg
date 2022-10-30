@@ -1,8 +1,10 @@
 #
-# Program Name: libConversion.s
+# Assignment: 1-2
+# Program Name: checkCharNonLogical.s
 # Author: Tim Chen
-# Date: 10/23/2022
-# Purpose: conversion functions for the assignment
+# Date: 10/30/2022
+# Purpose: check if the input character is an English character
+#          this is the version without logical variables
 #
 
 .global main
