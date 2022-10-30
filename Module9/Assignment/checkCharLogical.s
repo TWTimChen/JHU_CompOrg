@@ -30,7 +30,7 @@ main:
     ADDLE r5, r5, #1
     MOV r6, #0
     CMP r4, #0x41
-    ADDGT r6, r6, #1
+    ADDGE r6, r6, #1
     AND r0, r5, r6
 
     # store the check result in a register
@@ -44,7 +44,7 @@ main:
     ADDLE r5, r5, #1
     CMP r4, #0x61
     MOV r6, #0
-    ADDGT r6, r6, #1
+    ADDGE r6, r6, #1
     AND r0, r5, r6
 
     # final check for the result

@@ -28,14 +28,14 @@ main:
     CMP r4, #0x5a
     BGT checkLower
     CMP r4, #0x41
-    BGT validCharacter
+    BGE validCharacter
         B invalidCharacter
 
     checkLower:
         CMP r4, #0x7a
         BGT invalidCharacter
         CMP r4, #0x61
-        BGT validCharacter
+        BGE validCharacter
             B invalidCharacter 
 
     validCharacter:
