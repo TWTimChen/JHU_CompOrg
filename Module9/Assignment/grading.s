@@ -1,6 +1,6 @@
 #
 # Assignment: 2
-# Program Name: checkCharLogical.s
+# Program Name: grading.s
 # Author: Tim Chen
 # Date: 10/30/2022
 # Purpose: trandform a student's grade from a number to a character-based grade
