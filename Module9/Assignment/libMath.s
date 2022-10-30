@@ -1,8 +1,9 @@
 #
-# Program Name: libConversion.s
+# Assignment: 3
+# Program Name: libMath.s
 # Author: Tim Chen
-# Date: 10/23/2022
-# Purpose: conversion functions for the assignment
+# Date: 10/30/2022
+# Description: function that takes three integers as input and return the max one
 #
 
 .global findMaxOf3
@@ -13,7 +14,7 @@ findMaxOf3:
     SUB sp, sp, #4
     STR lr, [sp]
 
-    # convert miles into kilometers
+    # compare three integers and move the maximum to r0
     CMP r0, r1
     MOVLT r0, r1
     CMP r0, r2
