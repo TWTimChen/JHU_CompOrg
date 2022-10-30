@@ -1,8 +1,9 @@
 #
-# Program Name: libConversion.s
+# Assignment: 2
+# Program Name: checkCharLogical.s
 # Author: Tim Chen
-# Date: 10/23/2022
-# Purpose: conversion functions for the assignment
+# Date: 10/30/2022
+# Purpose: trandform a student's grade from a number to a character-based grade
 #
 
 .global main
@@ -28,7 +29,7 @@ main:
     LDR r4, =grade
     LDR r4, [r4]
 
-    # check if the grade is between 0 to 1000
+    # check if the grade is between 0 to 100
     MOV r5, #0
     CMP r4, #0
     ADDGE r5, r5, #1
