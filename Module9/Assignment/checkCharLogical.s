@@ -1,8 +1,10 @@
 #
-# Program Name: libConversion.s
+# Assignment: 1-1
+# Program Name: checkCharLogical.s
 # Author: Tim Chen
-# Date: 10/23/2022
-# Purpose: conversion functions for the assignment
+# Date: 10/30/2022
+# Purpose: check if the input character is an English character
+#          this is the version with logical variables
 #
 
 .global main
@@ -22,7 +24,7 @@ main:
     LDR r4, =char
     LDR r4, [r4]
 
-    # start the check
+    # check if the character is with the upper case code range
     MOV r5, #0
     CMP r4, #0x5a
     ADDLE r5, r5, #1
@@ -31,10 +33,12 @@ main:
     ADDGT r6, r6, #1
     AND r0, r5, r6
 
+    # store the check result in a register
     MOV r7, #0
     CMP r0, #1
     ADDEQ r7, r7, #1
 
+    # check if the character is with the lower case code range
     MOV r5, #0
     CMP r4, #0x7a
     ADDLE r5, r5, #1
@@ -43,6 +47,7 @@ main:
     ADDGT r6, r6, #1
     AND r0, r5, r6
 
+    # final check for the result
     ORR r0, r0, r7
     CMP r0, #1
     BNE invalidCharacter
