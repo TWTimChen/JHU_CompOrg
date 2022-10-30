@@ -1,10 +1,9 @@
 #
-# Program Name: main1.s
+# Assignment: 3
+# Program Name: mainMath.s
 # Author: Tim Chen
-# Date: 10/23/2022
-# Purpose: conversion functions for the assignment
-# Inputs: hours and miles for kph conversion
-# Outputs: the conversion result
+# Date: 10/30/2022
+# Purpose: test the functionality for findMaxOF3
 #
 
 .text
@@ -26,7 +25,7 @@ main:
     LDR r3, =num3
     BL scanf
 
-    # convert
+    # call findMaxOf3
     LDR r0, =num1
     LDR r0, [r0]
     LDR r1, =num2
