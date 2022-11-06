@@ -1,3 +1,11 @@
+#
+# Assignment: 3
+# Program Name: guessNumber.s
+# Author: Tim Chen
+# Date: 11/06/2022
+# Purpose: let user guess a random number within the input maximum value
+#
+
 .text
 .global main
 main:
