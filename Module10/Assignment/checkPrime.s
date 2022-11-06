@@ -1,3 +1,11 @@
+#
+# Assignment: 2
+# Program Name: checkPrime.s
+# Author: Tim Chen
+# Date: 11/06/2022
+# Purpose: check if a number is within valid range and is prime
+#
+
 .text
 .global main
 main:
