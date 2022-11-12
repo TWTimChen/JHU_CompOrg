@@ -1,3 +1,13 @@
+#
+# Assignment: 2
+# Program Name: checkPrime.s
+# Author: Tim Chen
+# Date: 11/12/2022
+# Purpose: Generate the nth number of Fibonacci sequence
+# Description: Given the definition of fib(0) = 1 and fib(1) = 1,
+#              we can induct that fib(2) = 2 and the following numbers would have the same index pattern
+#
+
 .text
 .global main
 main:
