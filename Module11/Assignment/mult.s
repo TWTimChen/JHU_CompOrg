@@ -1,3 +1,13 @@
+#
+# Assignment: 1
+# Program Name: mult.s
+# Author: Tim Chen
+# Date: 11/12/2022
+# Purpose: Calculate multiplication by resursive function
+# Description: enter the multiplicand and multiplier in the form of ${multiplicand}*${multiplier}
+#              then get the multiplication
+#
+
 .text
 .global main
 main:
