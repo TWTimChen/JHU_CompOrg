@@ -1,6 +1,6 @@
 #
 # Assignment: 2
-# Program Name: checkPrime.s
+# Program Name: fib.s
 # Author: Tim Chen
 # Date: 11/12/2022
 # Purpose: Generate the nth number of Fibonacci sequence
